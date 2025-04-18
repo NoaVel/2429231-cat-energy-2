@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дарья Кузнецова](https://up.htmlacademy.ru/adaptive-individual/2/user/2429231).
-* Наставник: `Вадим Новаш`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
