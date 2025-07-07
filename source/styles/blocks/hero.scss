@@ -1,0 +1,20 @@
+.hero {
+  font-family: $secondary-font;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $thirdly-color;
+  background-color: $basic-green;
+}
+
+.hero__text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $thirdly-color;
+  background-color: $basic-green;
+}
+

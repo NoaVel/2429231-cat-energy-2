@@ -1,0 +1,28 @@
+.subscription {
+  font-family: $secondary-font;
+}
+
+.subscription__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $secondary-color;
+}
+
+.subscription__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $secondary-color;
+}
+
+.subscription__field {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.subscription__button {
+  font-size: 20px;
+  line-height: 26px;
+}
