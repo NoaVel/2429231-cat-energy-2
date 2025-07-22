@@ -1,0 +1,36 @@
+.card__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.card__title--more {
+  color: #111111;
+}
+
+.card__measure {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card__value {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+.card__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card__button {
+  color: $base-color;
+  background-color: $basic-grey;
+}
