@@ -6,6 +6,20 @@
   background-color: $basic-grey;
 }
 
+.programs__item--slim {
+  background-image: url("../../icons/cat-slim.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  background-position: top 21px left 20px;
+}
+
+.programs__item--pro {
+  background-image: url("../../icons/cat-pro.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
+  background-position: top 24px left 13px;
+}
+
 .programs__title {
   font-family: $secondary-font;
   font-weight: 400;
@@ -21,9 +35,33 @@
 }
 
 .programs__link {
+  display: flex;
   font-size: 16px;
   line-height: 16px;
   color: $secondary-color;
   background-color: $basic-grey;
-  text-align: left;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programs__link::after {
+  content: "";
+  display: block;
+  background-color: #000000;
+  width: 32px;
+  height: 10px;
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-size: 32px 10px;
+  mask-repeat: no-repeat;
+}
+
+.programs__link:hover::after,
+.programs__link:active::after {
+  mask-image: url("../../icons/stack.svg#arrow-long");
 }

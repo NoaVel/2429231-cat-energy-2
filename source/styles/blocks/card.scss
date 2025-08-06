@@ -1,3 +1,10 @@
+.card__more {
+  background-image: url("../../icons/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center top;
+}
+
 .card__title {
   font-family: $secondary-font;
   font-weight: 400;
@@ -21,7 +28,6 @@
   font-size: 12px;
   line-height: 16px;
 }
-
 
 .card__text {
   font-weight: 400;
