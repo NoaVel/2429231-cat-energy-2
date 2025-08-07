@@ -1,5 +1,7 @@
 .programs__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .programs__item {
@@ -30,13 +32,11 @@
 }
 
 .programs__text {
-  font-size: 14px;
-  line-height: 18px;
+  margin: 0;
 }
 
 .programs__link {
   display: flex;
-  font-size: 16px;
   line-height: 16px;
   color: $secondary-color;
   background-color: $basic-grey;
