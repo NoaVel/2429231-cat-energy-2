@@ -2,9 +2,54 @@
   background-color: $basic-grey;
 }
 
+.main-footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-footer__copyright {
+  width: 280px;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: $base-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#academy-logo");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+}
+
+.main-footer__copyright:hover::after,
+.main-footer__copyright:focus::after {
+  background-color: $basic-green;
+}
+
+.main-footer__copyright:active {
+  opacity: 0.3;
+}
+
+.main-footer__copyright:active::after {
+  background-color: $basic-green;
+  opacity: 0.3;
 }

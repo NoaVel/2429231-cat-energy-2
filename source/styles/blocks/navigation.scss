@@ -1,5 +1,18 @@
+.navigation__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .navigation__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation__link {
@@ -9,4 +22,19 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $secondary-color;
+}
+
+.navigation__toggle {
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  background-image: url("../../icons/menu-burger.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: none;
+}
+
+.navigation__toggle--close {
+  background-image: url("../../icons/cross-for-close.svg");
+  background-size: 18px 18px;
 }

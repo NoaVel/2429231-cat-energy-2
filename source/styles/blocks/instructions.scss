@@ -8,9 +8,40 @@
 
 .instructions__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.instructions__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.instructions__item--healthy::before {
+  background-image: url("../../icons/icon-leaf.svg");
+  background-size: 30px 32px;
+}
+
+.instructions__item--easy::before {
+  background-image: url("../../icons/icon-water.svg");
+  background-size: 26px 29px;
+}
+
+.instructions__item--advice::before {
+  background-image: url("../../icons/icon-eat.svg");
+  background-size: 25px 30px;
+}
+
+.instructions__item--result::before {
+  background-image: url("../../icons/icon-clock.svg");
+  background-size: 26px 31px;
 }
 
 .instructions__text {
-  font-size: 14px;
-  line-height: 18px;
+  margin: 0;
 }

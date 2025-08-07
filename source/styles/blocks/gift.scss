@@ -3,4 +3,16 @@
   line-height: 20px;
   color: $thirdly-color;
   background-color: $basic-green;
+  display: flex;
+  flex-direction: column;
+}
+
+.gift__text::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 80px;
+  background-image: url("../../icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 70px 80px;
 }
