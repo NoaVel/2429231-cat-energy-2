@@ -12,7 +12,13 @@
       )
       top / 100% 302px no-repeat,
       url("../../images/bg-cat-mobile.png")
-      left top / 100% 302px no-repeat;
+      50% top / 320px 302px no-repeat,
+      linear-gradient(
+        to right,
+        rgba(77, 76, 81),
+        rgba(68, 67, 72)
+      )
+      top / 100% 302px no-repeat;
   }
 }
 
@@ -20,9 +26,10 @@
   content: "";
   position: absolute;
   width: 50%;
+  height: 694px;
+  top: calc(0px - 114px);
   right: 0;
   bottom: 0;
-  height: calc(100% + 224px);
   background:
     linear-gradient(
       to bottom,
@@ -31,7 +38,13 @@
     )
     top / 100% 694px no-repeat,
     url("../../images/bg-cat-desktop.png")
-    left top / 100% 694px no-repeat;
+    left top / 1041px 694px no-repeat,
+    linear-gradient(
+      to right,
+      rgba(78, 78, 82),
+      rgb(61, 60, 65)
+    )
+    top / 100% 694px no-repeat;
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -47,6 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 110px;
     padding-bottom: 82px;
   }
 }
