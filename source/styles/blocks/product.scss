@@ -1,10 +1,15 @@
 .product__title {
+  margin: 0;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+}
+
+.product__content {
+  margin: 0;
 }
 
 .product__volume {

@@ -1,11 +1,39 @@
+.programs__inner {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 71px;
+  }
+}
+
 .programs__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__item--slim {
@@ -23,6 +51,7 @@
 }
 
 .programs__title {
+  margin: 0;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;

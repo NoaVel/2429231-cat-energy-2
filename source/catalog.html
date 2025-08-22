@@ -15,8 +15,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__inner container">
-      <nav class="navigation navigation--nodejs">
+    <div class="main-header__inner main-header__inner--catalog container">
+      <nav class="navigation navigation--no-js">
         <a class="navigation__logo logo" href="index.html">
           <picture>
             <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
@@ -27,22 +27,22 @@
         </a>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">
+            <a class="navigation__link navigation__link--catalog" href="index.html">
               Главная
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">
+            <a class="navigation__link navigation__link--catalog" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">
+            <a class="navigation__link navigation__link--catalog" href="#">
               Подбор программы
             </a>
           </li>
         </ul>
-        <button class="navigation__toggle navigation__toggle--close" type="button">
+        <button class="navigation__toggle navigation__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
@@ -272,58 +272,60 @@
     <section class="additional-products">
       <div class="additional-products__inner container">
         <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list">
-          <li class="additional-products__item">
-            <article class="additional-products__product product">
-              <h3 class="product__title">Сахарозаменитель</h3>
-              <p class="product__content">
-                <span class="product__volume">1 упаковка (100 г)</span>
-                <span class="product__price">200 ₽</span>
-              </p>
-              <a class="product__link button" href="#">
-                Заказать
-              </a>
-            </article>
-          </li>
-          <li class="additional-products__item">
-            <article class="additional-products__product product">
-              <h3 class="product__title">Питьевая вода</h3>
-              <p class="product__content">
-                <span class="product__volume">5 литров</span>
-                <span class="product__price">50 ₽</span>
-              </p>
-              <a class="product__link button" href="#">
-                Заказать
-              </a>
-            </article>
-          </li>
-          <li class="additional-products__item">
-            <article class="additional-products__product product">
-              <h3 class="product__title">Молоко</h3>
-              <p class="product__content">
-                <span class="product__volume">1 литр</span>
-                <span class="product__price">100 ₽</span>
-              </p>
-              <a class="product__link button" href="#">
-                Заказать
-              </a>
-            </article>
-          </li>
-          <li class="additional-products__item">
-            <article class="additional-products__product product">
-              <h3 class="product__title">Витамины</h3>
-              <p class="product__content">
-                <span class="product__volume">1 упаковка (30 г)</span>
-                <span class="product__price">300 ₽</span>
-              </p>
-              <a class="product__link button" href="#">
-                Заказать
-              </a>
-            </article>
-          </li>
-        </ul>
-        <div class="additional-products__gift gift">
-          <p class="gift__text">Закажите все <br>и получите чехол для <br>кота в подарок!</p>
+        <div class="additional-products__wrapper">
+          <ul class="additional-products__list">
+            <li class="additional-products__item">
+              <article class="additional-products__product product">
+                <h3 class="product__title">Сахарозаменитель</h3>
+                <p class="product__content">
+                  <span class="product__volume">1 упаковка (100 г)</span>
+                  <span class="product__price">200 ₽</span>
+                </p>
+                <a class="product__link button" href="#">
+                  Заказать
+                </a>
+              </article>
+            </li>
+            <li class="additional-products__item">
+              <article class="additional-products__product product">
+                <h3 class="product__title">Питьевая вода</h3>
+                <p class="product__content">
+                  <span class="product__volume">5 литров</span>
+                  <span class="product__price">50 ₽</span>
+                </p>
+                <a class="product__link button" href="#">
+                  Заказать
+                </a>
+              </article>
+            </li>
+            <li class="additional-products__item">
+              <article class="additional-products__product product">
+                <h3 class="product__title">Молоко</h3>
+                <p class="product__content">
+                  <span class="product__volume">1 литр</span>
+                  <span class="product__price">100 ₽</span>
+                </p>
+                <a class="product__link button" href="#">
+                  Заказать
+                </a>
+              </article>
+            </li>
+            <li class="additional-products__item">
+              <article class="additional-products__product product">
+                <h3 class="product__title">Витамины</h3>
+                <p class="product__content">
+                  <span class="product__volume">1 упаковка (30 г)</span>
+                  <span class="product__price">300 ₽</span>
+                </p>
+                <a class="product__link button" href="#">
+                  Заказать
+                </a>
+              </article>
+            </li>
+          </ul>
+          <div class="additional-products__gift gift">
+            <p class="gift__text">Закажите все <br>и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -341,20 +343,20 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Адрес</h2>
-      <picture>
-        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-        <img class="map__image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
-      </picture>
-      <div class="map__inner container">
-        <div class="map__invitation invitation invitation--catalog">
+      <div class="map__inner map__inner--catalog container">
+        <div class="map__invitation invitation">
           <p class="invitation__text">Приглашаем к сотрудничеству дилеров!</p>
-          <address>
+          <address class="invitation__address">
             <p class="invitation__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="invitation__city">Санкт-Петербург</p>
           </address>
         </div>
       </div>
+      <picture>
+        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+        <img class="map__image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">

@@ -10,4 +10,9 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $base-color;
+  background-color: #ffffff;
 }/* здесь используйте глобальные селекторы img, body, html и так далее */
+
+img {
+  display: block;
+}
