@@ -1,4 +1,17 @@
+.instructions__inner {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
+  }
+}
+
 .instructions__title {
+  margin: 0;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 36px;
@@ -10,6 +23,54 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.instructions__item--healthy {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-right: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 94px;
+  }
+}
+
+.instructions__item--easy {
+  @media (min-width: $tablet-width) {
+    width: 246px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+  }
+}
+
+.instructions__item--advice {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin-right: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 248px;
+    margin-right: 77px;
+  }
+}
+
+.instructions__item--result {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
 }
 
 .instructions__item::before {
