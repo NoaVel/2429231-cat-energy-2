@@ -6,33 +6,144 @@
   }
 }
 
+.example--bg {
+  @media (min-width: $tablet-width) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(234, 234, 234),
+        rgba(234, 234, 234)
+      )
+      bottom / 100% 462px no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(234, 234, 234),
+        rgba(234, 234, 234)
+      )
+      bottom / 100% 462px no-repeat;
+  }
+}
+
+.example__inner {
+  position: relative;
+}
+
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
+  padding-top: 25px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    padding-top: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .example__text {
   margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    padding-top: 70px;
+    width: 433px;
+  }
 }
 
 .example__list {
   margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 99px;
+    width: 367px;
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 42px;
+    margin-bottom: 55px;
+  }
+}
+
+.example__item {
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .example__content {
+  margin: 0;
+  margin-bottom: 8px;
+  padding-top: 14px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+    padding-top: 15px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__caption {
-  margin: 0;
+  margin: 0 auto;
+  width: 77px;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 125px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.example__cost {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 188px;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    position: absolute;
+    top: 258px;
+    right: 0;
+    margin: 0;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 75px;
+    width: 327px;
+  }
 }

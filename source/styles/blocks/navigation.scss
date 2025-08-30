@@ -12,6 +12,15 @@
 .navigation__logo {
   display: flex;
   align-items: center;
+  gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 
   &:hover,
   &:focus {
@@ -38,10 +47,48 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     gap: 33px;
+    margin-right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.navigation__item--current {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -6px;
+      left: 0;
+      height: 2px;
+      background: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: #ffffff;
+    }
+  }
+}
+
+.navigation__list--catalog .navigation__item--current {
+  @media (min-width: $desktop-width) {
+    &::after {
+      background: $basic-green;
+    }
   }
 }
 
 .navigation__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -49,19 +96,32 @@
   text-transform: uppercase;
   color: $secondary-color;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) and (max-width: 1439px) {
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     line-height: 30px;
     color: $thirdly-color;
   }
 }
 
 .navigation__list--catalog a {
-  color: $secondary-color;
+  @media (min-width: $desktop-width) {
+    color: $secondary-color;
+  }
 }
 
 .navigation__toggle {
@@ -74,7 +134,7 @@
   border: none;
   position: absolute;
   top: 7px;
-  right: 0;
+  right: 1px;
 
   @media (min-width: $tablet-width) {
     display: none;
