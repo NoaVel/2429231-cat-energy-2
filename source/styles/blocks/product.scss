@@ -14,10 +14,6 @@
     font-size: 20px;
     line-height: 20px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-right: auto;
-  // }
 }
 
 .product__content {
@@ -29,10 +25,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
-}
-
-.product__content {
-  margin: 0;
 }
 
 .product__volume {
