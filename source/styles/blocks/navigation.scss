@@ -1,11 +1,25 @@
 .navigation {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
+  padding-top: 13px;
+  padding-bottom: 14px;
+
+  @media (max-width: 767px) {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    padding-top: 25px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 0;
   }
 }
 
@@ -15,7 +29,9 @@
   gap: 56px;
 
   @media (min-width: $tablet-width) {
+    display: inline-flex;
     gap: 13px;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +57,7 @@
   align-items: center;
 
   @media (max-width: 767px) {
+    padding-top: 15px;
     width: 100%;
   }
 
@@ -55,6 +72,19 @@
   }
 }
 
+.navigation--no-js .navigation__list {
+  @media (max-width: 767px) {
+    // display: none;
+  }
+}
+
+.navigation__item {
+  @media (max-width: 767px) {
+    width: 100%;
+    border-top: solid 1px #e6e6e6;
+  }
+}
+
 .navigation__item--current {
   @media (min-width: $tablet-width) {
     position: relative;
@@ -63,7 +93,7 @@
       content: "";
       position: absolute;
       right: 0;
-      bottom: -6px;
+      bottom: -9px;
       left: 0;
       height: 2px;
       background: $basic-green;
@@ -92,6 +122,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: $secondary-color;
@@ -133,8 +164,8 @@
   background-repeat: no-repeat;
   border: none;
   position: absolute;
-  top: 7px;
-  right: 1px;
+  top: 20px;
+  right: 21px;
 
   @media (min-width: $tablet-width) {
     display: none;

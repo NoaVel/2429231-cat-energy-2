@@ -67,7 +67,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
-    background-position: top 91px right 29px;
+    background-position: top 91px right 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -141,6 +141,7 @@
 
   @media (min-width: $tablet-width) {
     width: 165px;
+    font-size: 20px;
     line-height: 30px;
     gap: 25px;
   }

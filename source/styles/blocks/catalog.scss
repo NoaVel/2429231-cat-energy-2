@@ -19,6 +19,10 @@
   line-height: 36px;
   color: $secondary-color;
 
+  @media (max-width: 767px) {
+    padding-top: 27px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 84px;
     font-size: 60px;
@@ -49,7 +53,12 @@
 .catalog__item {
   padding-top: 20px;
   padding-bottom: 24px;
-  // border-bottom: solid 1px #ebebeb;
+
+  @media (max-width: 767px) {
+    margin-right: -20px;
+    margin-left: -20px;
+    border-top: 1px solid #ebebeb;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 37px 40px;
@@ -62,22 +71,23 @@
 
 .catalog__item--bg {
   @media (min-width: $tablet-width) {
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(242, 242, 242),
-        rgba(242, 242, 242)
-      )
-      bottom / 100% 430px no-repeat;
+    background-image: linear-gradient(#f2f2f2, #f2f2f2);
+    background-position: 0 81px;
+    background-size: 100% calc(100% - 81px);
+    background-repeat: no-repeat;
   }
 }
 
 .catalog__item--more {
   padding-top: 25px;
 
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #ebebeb;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 82px;
-    padding: 0;
+    padding: 50px 35px 40px;
     border: solid 2px #f2f2f2;
   }
 
@@ -86,6 +96,13 @@
   }
 }
 
-// .catalog__item {
-//   border-bottom: solid 1px #ebebeb;
-// }
+.catalog__card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 767px) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}

@@ -106,29 +106,37 @@
       <div class="example__inner container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__content">5 кг</dt>
-            <dd class="example__caption">снижение веса</dd>
+        <div class="example__progress">
+          <dl class="example__list">
+            <div class="example__item">
+              <dt class="example__content">5 кг</dt>
+              <dd class="example__caption">снижение веса</dd>
+            </div>
+            <div class="example__item">
+              <dt class="example__content">60 дней</dt>
+              <dd class="example__caption">затрачено времени</dd>
+            </div>
+          </dl>
+          <div class="example__cost cost">
+            <p class="cost__description">Затраты на питание:<span class="cost__value">15 000 руб.</span></p>
           </div>
-          <div class="example__item">
-            <dt class="example__content">60 дней</dt>
-            <dd class="example__caption">затрачено времени</dd>
-          </div>
-        </dl>
-        <div class="example__cost cost">
-          <p class="cost__description">Затраты на питание:<span class="cost__value">15 000 руб.</span></p>
         </div>
         <div class="example__container slider">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
-            <img class="slider__image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
-          </picture>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
-            <img class="slider__image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
-          </picture>
-          <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть слайдер</span></button>
+          <div class="slider__container">
+            <div class="slider__before">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
+                <img class="slider__image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              </picture>
+            </div>
+            <div class="slider__after">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
+                <img class="slider__image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+              </picture>
+            </div>
+            <button class="slider__button" type="button"><span class="visually-hidden">Передвинуть слайдер</span></button>
+          </div>
         </div>
       </div>
     </section>
@@ -136,7 +144,7 @@
       <h2 class="visually-hidden">Адрес</h2>
       <div class="map__inner container">
         <div class="map__invitation invitation">
-          <p class="invitation__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="invitation__text">Приглашаем <br>к сотрудничеству дилеров!</p>
           <address class="invitation__address">
             <p class="invitation__street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="invitation__city">Санкт-Петербург</p>
