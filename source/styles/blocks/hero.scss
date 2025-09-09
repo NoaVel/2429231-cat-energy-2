@@ -11,7 +11,25 @@
         rgba(104, 183, 56, 0.85)
       )
       top / 100% 302px no-repeat,
-      url("../../images/bg-cat-mobile.png")
+      url("../../images/bg-cat-mobile@1x.jpg")
+      50% top / 320px 302px no-repeat,
+      linear-gradient(
+        to right,
+        rgba(77, 76, 81),
+        rgba(68, 67, 72)
+      )
+      top / 100% 302px no-repeat;
+  }
+
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      )
+      top / 100% 302px no-repeat,
+      url("../../images/bg-cat-mobile@2x.jpg")
       50% top / 320px 302px no-repeat,
       linear-gradient(
         to right,
@@ -37,7 +55,7 @@
       rgba(104, 183, 56, 0.85)
     )
     top / 100% 694px no-repeat,
-    url("../../images/bg-cat-desktop.png")
+    url("../../images/bg-cat-desktop@1x.jpg")
     left top / 1041px 694px no-repeat,
     linear-gradient(
       to right,
@@ -46,6 +64,24 @@
     )
     top / 100% 694px no-repeat;
   display: none;
+
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      )
+      top / 100% 694px no-repeat,
+      url("../../images/bg-cat-desktop@2x.jpg")
+      left top / 1041px 694px no-repeat,
+      linear-gradient(
+        to right,
+        rgba(78, 78, 82),
+        rgb(61, 60, 65)
+      )
+      top / 100% 694px no-repeat;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;

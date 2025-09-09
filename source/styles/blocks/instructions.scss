@@ -34,6 +34,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 77px;
   }
 }
 
@@ -63,11 +68,11 @@
 .instructions__item--healthy {
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin-right: 153px;
+    margin-right: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 94px;
+    margin-right: 17px;
   }
 }
 
@@ -77,20 +82,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 79px;
+    margin-right: 2px;
   }
 }
 
 .instructions__item--advice {
   @media (min-width: $tablet-width) {
     width: 247px;
-    margin-right: 137px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 248px;
-    margin-right: 77px;
   }
 }
 

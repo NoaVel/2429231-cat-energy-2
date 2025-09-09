@@ -62,7 +62,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 33px;
     margin-right: 4px;
   }
@@ -166,10 +166,10 @@
   position: absolute;
   top: 20px;
   right: 21px;
+}
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+.navigation--no-js .navigation__toggle {
+  display: none;
 }
 
 .navigation__toggle--open {

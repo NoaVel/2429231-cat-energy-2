@@ -27,7 +27,7 @@
 
 .subscription__text {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -35,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     width: 632px;
     font-size: 24px;
     line-height: 32px;
@@ -80,11 +80,11 @@
   }
 
   &:focus {
-    border: solid 2px #444444;
+    outline: solid 2px #444444;
   }
 
   &:invalid {
-    border: solid 2px #ff8282;
+    outline: solid 2px #ff8282;
   }
 
   @media (min-width: $tablet-width) {
